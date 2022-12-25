@@ -14,25 +14,7 @@ def train_step(model: torch.nn.Module,
                loss_fn: torch.nn.Module, 
                optimizer: torch.optim.Optimizer,
                device: torch.device) -> Tuple[float, float]:
-  """Trains a PyTorch model for a single epoch.
-
-  Turns a target PyTorch model to training mode and then
-  runs through all of the required training steps (forward
-  pass, loss calculation, optimizer step).
-
-  Args:
-    model: A PyTorch model to be trained.
-    dataloader: A DataLoader instance for the model to be trained on.
-    loss_fn: A PyTorch loss function to minimize.
-    optimizer: A PyTorch optimizer to help minimize the loss function.
-    device: A target device to compute on (e.g. "cuda" or "cpu").
-
-  Returns:
-    A tuple of training loss and training accuracy metrics.
-    In the form (train_loss, train_accuracy). For example:
-
-    (0.1112, 0.8743)
-  """
+  
   # Put model in train mode
   model.train()
 
