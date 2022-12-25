@@ -7,7 +7,7 @@ to use it inside of a python notebook:
 try:
     from torch_utils import data_setup, engine
 except:
-    print("[INFO] installing utility files from 'https://github.com/yonatan-co/torch_snippets.git'")
+    print("installing  files from 'https://github.com/yonatan-co/torch_snippets.git'")
     !git clone https://github.com/yonatan-co/torch_utils.git
     !rm torch_utils/README.md
     from torch_utils import data_setup, engine
